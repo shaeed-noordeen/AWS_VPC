@@ -38,3 +38,20 @@ The key difference between stateful and stateless applications is that stateless
 > - Step 3 - Public subnet for our app 
 > - Step 4 - Create RT with routes/rules - Edit routes to allow IG and VPC - Associate our RT to our public subnet
 > - Step 5 - Create a security group now or create at when we launch our app - port 22 from my ip - port 3000 - port 80 HTTP - HTTPS - SSL
+
+
+
+
+
+## Access the internet for private subnet and db instance
+> - AWS Nat Gateway - easy - ElasticIP
+> - AWS Nat instance - logical Nat instance - vailable in marketplace
+> - Bastion server on jump box - manual - another ec2 instance 18.04 config
+
+> - Step 1 - Select AMI from aws market place
+> - Step 2 - Choose linux distro
+> - Step 3 - launch it in our vpc with in public subnet - enable public
+> - Step 4 - Disable/stop resource reuqest checks
+> - Step 5 - Edit route table to allow 0.0.0.0/0 for Nat instance
+> - Step 6 - USe SCP - Rsync - manually copy and paste by creating a file. 
+
