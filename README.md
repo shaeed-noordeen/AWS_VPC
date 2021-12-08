@@ -55,3 +55,6 @@ The key difference between stateful and stateless applications is that stateless
 > - Step 5 - Edit route table to allow 0.0.0.0/0 for Nat instance
 > - Step 6 - USe SCP - Rsync - manually copy and paste by creating a file. 
 
+
+![vpc](https://user-images.githubusercontent.com/94617056/145219319-ed492f0f-5dbc-4da2-9f28-123882c7d077.PNG)
+
